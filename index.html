@@ -9,11 +9,12 @@
 </head>
 <body>
 
-    <!--form-->
+    <div class="container-lg m-5 bg-body-secondary shadow p-3 mb-5 bg-body-tertiary rounded" >
+        <!--form-->
     <!--look up by username/ first or last name-->
-    <form class="row gy-1 gx-1">
+    <form class="row gy-1 gx-1 px-2 p-5">
         <div class="row g-4">
-            <div class="col-sm-3">
+            <div class="col-auto">
                 <div class="input-group">
                   <div class="input-group-text">@</div>
                   <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
@@ -23,9 +24,9 @@
         
             <div class="col">
                 <div class="input-group">
-                    <div class="input-group-text">First and Last Name</div>
+                    <div class="input-group-text">Name</div>
                     <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Firstname">
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Firstname">
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Lastname">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
                 </div>
             </div>
@@ -71,9 +72,22 @@
                 <input type="checkbox" class="btn-check" id="option3" name="options" autocomplete="off">
                 <label class="btn btn-outline-secondary" for="option3">Single toggle</label><br>
             </div>
+
+            <div class="col-auto">
+                <input type="checkbox" class="btn-check" id="option3" name="options" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="option3">Single toggle</label><br>
+            </div>
+
+            <div class="col-auto">
+                <input type="checkbox" class="btn-check" id="option3" name="options" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="option3">Single toggle</label><br>
+            </div>
         </div>
 
     </form>
+    </div>
+
+
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
