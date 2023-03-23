@@ -41,7 +41,7 @@
 
         <div class="row g-2">
         <!--form-->
-        <div class="container-lg bg-body-secondary shadow bg-body-tertiary rounded">
+        <div class="container-lg bg-body-secondary shadow bg-body-tertiary rounded" style="max-width:1300px;">
           <!--look up by username/ first or last name-->
           <form class="row gy-1 gx-1 px-2 p-5">
             <h3>Reservation Lookup</h3>
@@ -130,7 +130,7 @@
                     <th>Reserved Date</th>
                   </tr>
                   <tr>
-                    <td>03/27/2023</td>
+                    <td>04/10/2023</td>
                   </tr>
                 </table>
               </li>
@@ -150,7 +150,7 @@
                     <th>Estimated Price</th>
                   </tr>
                   <tr>
-                    <td>$102.50</td>
+                    <td>$384.24</td>
                   </tr>
                 </table>
               </li>
@@ -596,7 +596,7 @@
                 <th>Scheduled Distance</th>
               </tr>
               <tr>
-                <td>128 miles</td>
+                <td>1319 miles miles</td>
               </tr>
             </table>
           </li>
@@ -799,7 +799,7 @@
 </main>
 
           <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -807,43 +807,134 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <table class="table table-bordered text-center align-middle" id="calendar">
+        <h3>Reservation for <a href="#" style="Color: blue; text-decoration: none;">@Username</a></h3>
+        <table class="table">
+            <tr>
+              <th>
+                <img src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/CCAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1611777286679.png" class="img-fluid rounded-start" alt="Car image">
+              </th>
+              <th style="font-size:30px">
+                Estimated Total
+                <br>
+                <h3>
+                  $352.56
+                </h3>
+                <h5 style="color:darkgrey;">
+                  + $31.69 Tax
+                </h5>
+                <hr>
+                <h1>
+                  $384.24
+                </h1>
+              </th>
+            </tr>
+        </table>
+        <table class="table table-bordered border-primary">
           <thead>
             <tr>
-              <th scope="col">Username</th>
-              <th scope="col">Firstname</th>
-              <th scope="col">Lastname</th>
+              <th scope="col">Customer Information</th>
+              <th scope="col">Vehicle Information</th>
+              <th scope="col">Reservation Detail</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>@WednesdayTrip</td>
-              <td>Boe</td>
-              <td>Smith</td>
-            </tr>
-          </tbody>
-          <thead>
-            <tr>
-              <th scope="col">Schedule Vehicle</th>
-              <th scope="col">Schedule Distance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Toyota Corolla</td>
-              <td>152 miles</td>
+              <td colspan="1">
+                <table class="table mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Username</th>
+                      <tr>
+                        <td>@username</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">First Name</th>
+                      <tr>
+                        <td>Boe</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Last Name</th>
+                      <tr>
+                        <td>Smith</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Date of Birth</th>
+                      <tr>
+                        <td>03/21/1976</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Email</th>
+                      <tr>
+                        <td>BoeS03@gmail.com</td>
+                    </tr>
+                  </thead>
+                </table>
+              </td>
+              <td colspan="1">
+                <table class="table mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Vehicle</th>
+                      <tr>
+                        <td>2016 Toyota Corolla</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Mileage</th>
+                      <tr>
+                        <td>63,425 miles</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Seats</th>
+                      <tr>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Insurance</th>
+                      <tr>
+                        <td>Customer provided</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">RV Attachment</th>
+                      <tr>
+                        <td>NOT APPLICABLE</td>
+                    </tr>
+                  </thead>
+                </table>
+              </td>
+              <td colspan="1">
+                <table class="table mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Start Date</th>
+                      <tr>
+                        <td>04/10/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Return Date</th>
+                      <tr>
+                        <td>04/21/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Pickup Location</th>
+                      <tr>
+                        <td>St. Louis, MO</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Return Location</th>
+                      <tr>
+                        <td>Salt Lake City, UT</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Estimated Distance</th>
+                      <tr>
+                        <td>1319 miles</td>
+                    </tr>
+                  </thead>
+                </table>
+              </td>
             </tr>
           </tbody>
         </table>
-
-        <br>
-          <h5 >Estimated Total</h5>
-          <h3>$102.56</h4>
-            
-            <br>
-            <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
-
-      </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Edit Reservation</button>
