@@ -45,40 +45,55 @@
           
         <!--form-->
         <div class="container-lg bg-body-secondary shadow bg-body-tertiary rounded">
+
           <!--look up by username/ first or last name-->
           <form class="row gy-1 gx-1 px-2 p-5">
             <h3>Reservation Lookup</h3>
-            <div class="row g-4">
-              <div class="col-auto">
-                <div class="input-group">
-                  <div class="input-group-text">@</div>
-                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
-                  <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
+              <div class="container">
+                <h4>Customer Information</h4>
+                <div class="row g-2">
+                <div class="col-auto">
+                  <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                    <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
+                  </div>
                 </div>
-              </div>
-
-              <div class="col">
-                <div class="input-group">
-                  <div class="input-group-text">Name</div>
-                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Firstname">
-                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Lastname">
-                  <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
+  
+                <div class="col">
+                  <div class="input-group">
+                    <div class="input-group-text">Name</div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Firstname">
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Lastname">
+                    <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
+                  </div>
                 </div>
-              </div>
-
             </div>
-
-            <!--email-->
-            <div class="row g-4">
-              <div class="col">
-                <div class="input-group">
-                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Email">
-                  <div class="input-group-text">@</div>
-                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder=".com">
-                  <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
-                </div>
+          </div>
+  
+            <div class="row g-2">
+            <div class="col">
+              <div class="input-group">
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Email">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder=".com">
+                <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
               </div>
             </div>
+  
+            <div class="col">
+              <div class="input-group">
+                <div class="input-group-text">Date of Birth</div>
+                <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="mm">
+                <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="dd">
+                <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="yyyy">
+                <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
+              </div>
+            </div>
+          </div>
+              
+
+
 
             <!--reservation date-->
             <div class="row g-4">
@@ -101,8 +116,8 @@
                   <a href="searchresult.html" class="btn btn-outline-secondary" role="button" id="button-addon2">Search</a>
                 </div>
               </div>
-            </div>
-
+            
+              </div>
           </form>
         </div>
 
