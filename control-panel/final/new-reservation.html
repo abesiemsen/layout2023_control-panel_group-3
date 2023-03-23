@@ -39,78 +39,40 @@
           </div>
         </div>
 
-        <div class="col flex-wrap shadow bg-body-tertiary rounded">
+        <div class="col flex-wrap shadow bg-body-tertiary rounded" style="padding: 2rem">
           <!-- new reservation form -->
           <h1 class="pt-3 mb-4"> New Reservation</h1>
 
           <form>
             <h3>Customer Info</h3>
 
-
-            <!-- <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">@</span>
-              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-            </div> -->
-
             <div class="input-group mb-3">
               <span class="input-group-text"> Name </span>
               <input type="text" class="form-control" placeholder="first name" aria-label="first name">
               <input type="text" class="form-control" placeholder="last name" aria-label="last name">
-
-              <!-- <div class="col-auto">
-                <label for="inputName" class="col-form-label"> Name </label>
-              </div>
-              <div class="col-auto">
-                <input type="name" id="inputFirstName" class="form-control" placeholder="first name"
-                  aria-describedby="firstName">
-              </div>
-              <div class="col-auto">
-                <input type="name" id="inputLastName" class="form-control" placeholder="last name"
-                  aria-describedby="lastName">
-              </div> -->
             </div>
 
-            <div class="row g-2 mb-4 align-items-center">  
-              <div class="row flex-wrap g-2 align-items-center">
-                <div class="col-auto">
-                  <label for="inputUsername" class="col-form-label"> Username </label>
-                </div>
-                <div class="col-auto">
-                  <input type="username" id="inputUsername" class="form-control" placeholder="userB21"
-                    aria-describedby="username">
-                </div>
-              </div>
-            </div>
-
-            <div class="row g-2 mb-4 align-items-center">
-              <div class="row g-2 mb-2">
-                <div class="col-auto">
-                  <label for="inputPhoneNumber" class="col-form-label"> Phone Number </label>
-                </div>
-                <div class="col-auto">
-                  <input type="phonenumber" id="inputPhoneNumber" class="form-control" placeholder="xxx-xxx-xxxx"
-                    aria-describedby="email">
-                </div>
+            <div class="d-flex flex-row g-2 mb-3">
+              <div class="col input-group" style="padding-right: 2rem;"> 
+                <span class="input-group-text"> Date of Birth </span>
+                <input type="date" class="form-control" placeholder="mm/dd/yyyy" aria-label="date of birth">
               </div>
   
-              <div class="row g-2 mb-4">
-                <div class="col-auto">
-                  <label for="inputEmail" class="col-form-label"> Email </label>
-                </div>
-                <div class="col-auto">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="example@email.com"
-                    aria-describedby="email">
-                </div>
+              <div class="col input-group">
+                <span class="input-group-text"> Username </span>
+                <input type="text" class="form-control" placeholder="userBenS" aria-label="username">
               </div>
             </div>
 
-            <div class="row g-2 mb-2">
-              <div class="col-auto">
-                <label for="inputDOB" class="col-form-label"> Date of Birth </label>
+            <div class="d-flex flex-row g-2 mb-3">
+              <div class="col input-group" style="padding-right: 2rem;">
+                <span class="input-group-text"> Phone Number </span>
+                <input type="number" class="form-control" placeholder="xxx xxx xxxx" aria-label="phone number">
               </div>
-              <div class="col-auto">
-                <input type="date" id="inputDOB" class="form-control" placeholder="mm/dd/yyyy"
-                  aria-describedby="customer date of birth">
+              
+              <div class="col input-group"> 
+                <span class="input-group-text"> Email Address </span>
+                <input type="text" class="form-control" placeholder="example@email.com" aria-label="email">
               </div>
             </div>
 
