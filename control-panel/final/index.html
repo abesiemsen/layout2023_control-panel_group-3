@@ -68,6 +68,98 @@
             </div>
           </div>
 
+          <div class="row">
+            <!--form-->
+            <div class="container-lg bg-body-secondary shadow bg-body-tertiary rounded">
+              <!--look up by username/ first or last name-->
+              <form class="row gy-1 gx-1 px-2 p-5">
+                <h3>Customer Information</h3>
+                <div class="row g-4">
+                  <div class="col-auto">
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="input-group">
+                      <div class="input-group-text">Name</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Firstname">
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Lastname">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!--email-->
+                <div class="row g-4">
+                  <div class="col">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Email">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder=".com">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!--reservation date-->
+                <div class="row g-4">
+                  <div class="col">
+                    <div class="input-group">
+                      <div class="input-group-text">Date</div>
+                      <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="mm">
+                      <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="dd">
+                      <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="yyyy">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!--reservation number-->
+                <div class="row g-4">
+                  <div class="col">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Reservation Number">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!--options selection-->
+                <div class="row g-4">
+                  <label class="form-label">Car category</label>
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option1" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option1">Car</label><br>
+                  </div>
+
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option2" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option2">SUVs</label><br>
+                  </div>
+
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option3" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option3">Trucks</label><br>
+                  </div>
+
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option4" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option4">Vans</label><br>
+                  </div>
+
+                  <div class="col">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
 
           <!--Page grid/ margin-->
           <div class="mt-5 w-80 px-5 pt-5 container">
