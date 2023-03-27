@@ -18,11 +18,6 @@
         Brand Name
       </a>
 
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-
       <i class="fa-solid fa-user"> </i>
     </nav>
   </header>
@@ -41,9 +36,15 @@
 
         <!--Reservation result with matching name-->
         <div class="row g-2">
-            <container class="g-2">
-                <h3>Here's all the reservations that matches your <a class="h2" href="#">keyword</a></h3>
-            </container>
+                  <h3>Here are all the reservations that matches your
+                    <button type="button" class="btn btn-outline-primary position-relative">
+                      keyword
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        9
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+                  </h3>
 
             <!--first row-->
         <div class="row g-2">
