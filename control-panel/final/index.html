@@ -68,921 +68,125 @@
             </div>
           </div>
 
-          <!--Page grid/ margin-->
-          <div class="mt-5 w-80 px-5 pt-5 container">
-            <div style="margin-bottom: 2rem;">
-              <h3>Compare Rental Car Sizes and Classes</h3>
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <p class="fw-bold fs-4">Car</p>
-                  <div class="container text-center">
-                    <div class="row">
-                      <div class="col-sm-8" style="text-align: left;">Choose from a variety of rental cars in this
-                        category including economy, full-size or luxury sedans. Whether you are looking for
-                        fuel-efficiency, space, or comfort and style you are sure to find the perfect rental car no
-                        matter
-                        whether you are going on a quick family visit or an adventurous road trip.<div><button type="button" 
-                          class="btn btn-success btn-sm mt-2"><a href="#rental-car" style="text-decoration: none; color: inherit;">View All Car Classes</a></button></div>
-                      </div>
-                      <div class="col-sm-4"><img
-                          src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Hyundai-Grand-i10-Nios-200120231541.jpg&w=872&h=578&q=75&c=1"
-                          class="img-thumbnail" alt="Cars"></div>
+          <div class="row">
+            <!--form-->
+            <div class="container-lg bg-body-secondary shadow bg-body-tertiary rounded">
+              <!--look up by username/ first or last name-->
+              <form class="row gy-1 gx-1 px-2 p-5">
+                <h3>Customer Information</h3>
+                <div class="row g-4">
+                  <div class="col-auto">
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
                     </div>
                   </div>
-                </li>
-                <li class="list-group-item">
-                  <p class="fw-bold fs-4">SUVs</p>
-                  <div class="container text-center">
-                    <div class="row">
-                      <div class="col-sm-8" style="text-align: left;">Our SUVs offer plenty of flexibility with seating
-                        capacity, power, and luggage room. Whether you are going on a weekend family trip or exploring
-                        the
-                        countryside we are sure to have the ideal SUV for your needs.<div><button type="button"
-                            class="btn btn-success btn-sm mt-2"><a href="#rental-suv" style="text-decoration: none; color: inherit;">View All SUV Classes</a></button></div>
-                      </div>
-                      <div class="col-sm-4"><img
-                          src="https://gossipvehiculo.com/wp-content/uploads/2022/10/Toyota-4Runner-2023.png"
-                          class="img-thumbnail" alt="SUVs"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <p class="fw-bold fs-4">Trucks</p>
-                  <div class="container text-center">
-                    <div class="row">
-                      <div class="col-sm-8" style="text-align: left;">If you have extra cargo, towing is available on
-                        select vehicles through our Enterprise Truck Rental locations. *Reserve a towing capable vehicle
-                        by heading over to EnterpriseTrucks.com. *Visit our Truck Towing Guide for more information as
-                        an
-                        additional fee may apply.<div><button type="button" class="btn btn-success btn-sm mt-2"><a href="#rental-truck" style="text-decoration: none; color: inherit;">View All Truck Classes</a></button></div>
-                      </div>
-                      <div class="col-sm-4"><img src="https://thumbs.dreamstime.com/b/cargo-truck-15876088.jpg"
-                          class="img-thumbnail" alt="Trucks"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <p class="fw-bold fs-4">Vans</p>
-                  <div class="container text-center">
-                    <div class="row">
-                      <div class="col-sm-8" style="text-align: left;">Need extra room for people, luggage, or cargo or
-                        both? Our minivans and passenger vans can seat up to 7 and 15 passengers respectively and are
-                        great for family vacations or accommodating large groups. Cargo vans are ideal for transporting
-                        bulky items that may not fit in your personal vehicle.<div><button type="button"
-                            class="btn btn-success btn-sm mt-2"><a href="#rental-van" style="text-decoration: none; color: inherit;">View All Van Classes</a></button></div>
-                      </div>
-                      <div class="col-sm-4"><img
-                          src="https://i0.wp.com/www.ceylonliving.lk/wp-content/uploads/2022/07/Van.jpg?fit=1206%2C573&ssl=1"
-                          class="img-thumbnail" alt="Vans"></div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
 
-<!--Rental Car Classes-->
-        <div style="margin-bottom: 2rem;">
-        <h3 id="rental-car">Compare Rental Car</h3>          
-        <div class="container text-center">
-            <div class="row row-cols-3">
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Economy</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/ECAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1492780366644.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Economy">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Mitsubishi Mirage or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                        
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Economy Car Rental</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small" style="text-align:left;">
-        <ul class="list-unstyled">
-          <p>Rent an economy car for driving in crowded, downtown areas with busy traffic and tight parking spaces. Economy car rentals typically offer the best fuel efficiency. Reserve now and get low rates on an economy car rental from Enterprise Rent-A-Car.</p>
-          <li>Details:
-            <ul>
-              <li>Automatic</li>
-              <li>4 People</li>
-              <li>2 Bags</li>
-            </ul>
-          </li>
-          <li>Features:
-            <ul>
-              <li>Gasoline Vehicle</li>
-              <li>AM/FM Stereo Radio</li>
-              <li>Automatic</li>
-              <li>Air Conditioning</li>
-            </ul>
-          </li>
-          <p>
-          <li>What is an economy car rental?</li>
-          <ul>Economy cars are smaller vehicles that typically seat up to four passengers. Their high fuel economy makes them great for city driving, while their size makes them easy to maneuver through traffic.</ul>
-          </p>
-          <p>
-          <li>What is the difference between economy and compact car rental?</li>
-          <ul>The main difference between an economy car and a compact car is the size of the vehicle. Compact cars are a bit smaller than economy cars. Both of these vehicle classes are very fuel efficient.</ul>
-          </p>
-        </ul>
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Compact</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/CCAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1611777286679.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Compact">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Nissan Versa or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                        
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>                  
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Midsize</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/ICAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1620230914227.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Midsize">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Toyota Corolla or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Standard</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/SCAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1544210775124.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Standard">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Volkswagen Jetta or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Full Size</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/FCAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618262777765.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Full Size">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Chevy Malibu or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Convertible</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/STAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1543605919377.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Convertible">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Ford Mustang or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Sporty Car</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/SSAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1574880314547.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Sporty Car">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Dodge Challenger or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Luxury Performance Sport</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WXAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1654786641257.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Luxury Performance Sport">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Porsche, Mercedes Benz or similar
-                    </p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Premium</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/PCAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1574880326763.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Premium">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Nissan Maxima or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Luxury</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/LCAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618262778275.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Luxury">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Chrysler 300 or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Midsize Luxury Sedan</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/UXAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1654786524705.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Midsize Luxury Sedan">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Mercedes Benz E-Class or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Full Size Luxury Sedan</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WCAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1654786526850.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Full Size Luxury Sedan">
-                  <div class="card-body">
-                    <p class="card-text fw-light">BMW 7-Series, Audi A8 or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Hybrid</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/SCAH.doi.352.high.imageSmallThreeQuarterNodePath.png/1543605920546.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Hybrid">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Ford Fusion Hybrid or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Intermediate Electric</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/ICAE.doi.352.high.imageSmallThreeQuarterNodePath.png/1544210775276.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Intermediate Electric">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Nissan LEAF or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                  <h5 class="pt-2">Electric Luxury Sedan</h5>
-                  <img
-                    src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/WCAE.doi.352.high.imageSmallThreeQuarterNodePath.png/1654786525931.png"
-                    class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Electric Luxury Sedan">
-                  <div class="card-body">
-                    <p class="card-text fw-light">Tesla Model S, Taycan or similar</p>
-                    <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                    
-                    <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-                    <button type="button" class="btn btn-success btn-sm">Book</button>
-                    
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-
-<!--Rental SUV Classes-->
-          <div style="margin-bottom: 2rem;">
-            <h3 id="rental-suv">Compare Rental SUVs</h3>
-            <div class="container text-center">
-              <div class="row row-cols-3">
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Compact SUV</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/CFAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618262879339.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Compact SUV">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Nissan Kicks or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Midsize SUV</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/IFAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618262879727.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Midsize SUV">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Nissan Rogue or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Standard SUV</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/SFAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1551905658879.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Standard SUV">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Ford Edge or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Full Size SUV</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/FFAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618262877780.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Full Size SUV">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Chevrolet Tahoe or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Luxury SUV</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/LFAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1554401969012.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Luxury SUV">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Infiniti QX80 or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Standard Elite SUV</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/RFAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618262875775.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Standard Elite SUV">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Audi Q3, Cadillac XT4 or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Premium Crossover</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/PGAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1547581755813.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Premium Crossover">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Volkswagen Atlas or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Premium SUV</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/PFAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618262876980.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Premium SUV">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Chevy Suburban or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Jeep</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/SUVS/IJAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1544220629072.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Jeep">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Jeep Wrangler or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-<!--Rental Truck Classes-->
-          <div style="margin-bottom: 2rem;">
-              <h3 id="rental-truck">Compare Rental Trucks</h3>
-              <div class="container text-center">
-                <div class="row row-cols-3">
                   <div class="col">
-                    <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                      <h5 class="pt-2">Standard Pickup</h5>
-                      <img
-                        src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/TRUCKS/SPAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618263047434.png"
-                        class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Standard Truck">
-                      <div class="card-body">
-                        <p class="card-text fw-light">Chevrolet Colorado or similar</p>
-                        <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                            
-                        <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-            <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body small">
-            ...
-            </div>
-            </div>
-                      </div>
+                    <div class="input-group">
+                      <div class="input-group-text">Name</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Firstname">
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Lastname">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
                     </div>
                   </div>
+
+                </div>
+
+                <!--email-->
+                <div class="row g-4">
                   <div class="col">
-                    <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                      <h5 class="pt-2">1/2 Ton Pickup</h5>
-                      <img
-                        src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/TRUCKS/PPAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1512427309887.png"
-                        class="card-img-top h-auto w-75 d-inline-block m-auto" alt="1/2 Ton Truck">
-                      <div class="card-body">
-                        <p class="card-text fw-light">Ford F150 or similar</p>
-                        <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                            
-                        <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Email">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder=".com">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-            <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <!--reservation date-->
+                <div class="row g-4">
+                  <div class="col">
+                    <div class="input-group">
+                      <div class="input-group-text">Date</div>
+                      <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="mm">
+                      <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="dd">
+                      <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="yyyy">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!--reservation number-->
+                <div class="row g-4">
+                  <div class="col">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Reservation Number">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!--options selection-->
+                <div class="row g-4">
+                  <label class="form-label">Car category</label>
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option1" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option1">Car</label><br>
+                  </div>
+
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option2" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option2">SUVs</label><br>
+                  </div>
+
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option3" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option3">Trucks</label><br>
+                  </div>
+
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="option4" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="option4">Vans</label><br>
+                  </div>
+
+                  <div class="col">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                  </div>
+                </div>
+
+              </form>
             </div>
-            <div class="offcanvas-body small">
-            ...
-            </div>
-            </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            </div>
           </div>
-
-<!--Rental Van Classes-->
-          <div style="margin-bottom: 2rem;">
-            <h3 id="rental-van">Compare Rental Vans</h3>
-            <div class="container text-center">
-              <div class="row row-cols-3">
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">7 Passenger Minivan</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/VANS/MVAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1618263096675.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="7 Minivan">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Chrysler Pacifica or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">8 Passenger Minivan</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/VANS/SVAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1547668804155.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="8 Van">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Toyota Sienna or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">15 Passenger Van</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/VANS/FVAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1492744312521.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="15 Van">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Ford Transit Wagon or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">12 Passenger Van</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/VANS/RVAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1492744320042.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="12 Van">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Ford Transit Wagon or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Compact Cargo Vans</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/VANS/JKAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1517591717238.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto mb-3" alt="Compact Van">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Nissan NV200 or simila</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" style="width: 18rem; height: 20rem; margin-bottom: 2rem;">
-                    <h5 class="pt-2">Cargo Vans</h5>
-                    <img
-                      src="https://assets.gcs.ehi.com/content/enterprise_cros/data/vehicle/bookingCountries/US/VANS/SKAR.doi.352.high.imageSmallThreeQuarterNodePath.png/1492744297142.png"
-                      class="card-img-top h-auto w-75 d-inline-block m-auto" alt="Cargo Van">
-                    <div class="card-body">
-                      <p class="card-text fw-light">Chevrolet Express Cargo or similar</p>
-                      <!-- <div><button type="button" class="btn btn-success btn-sm">View details</button></div> -->
-                                          
-                      <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">View details</button>
-
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-          ...
-          </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-
-          </div>
-    
+        <!--List of vehicles-->
+        <div class="mt-5">
+          <h3>Compare Rental Car Sizes and Classes</h3>
+          <table class="table table-striped-columns">
+            <tbody>
+            <tr>
+                <th scope="row">Cars</th>
+                <td colspan="2">Choose from a variety of rental cars in this category including economy, full-size or luxury sedans. Whether you are looking for fuel-efficiency, space, or comfort and style you are sure to find the perfect rental car no matter whether you are going on a quick family visit or an adventurous road trip.</td>
+                <td scope="col"><a href="vehicles.html#car-classes" class="pe-auto">View</a></th>
+              </tr>
+              <tr>
+                <th scope="row">SUVs</th>
+                <td colspan="2">Our SUVs offer plenty of flexibility with seating capacity, power, and luggage room. Whether you are going on a weekend family trip or exploring the countryside we are sure to have the ideal SUV for your needs.</td>
+                <td scope="col"><a href="vehicles.html#suv-classes" class="pe-auto">View</a></th>
+              </tr>
+              <tr>
+                <th scope="row">Trucks</th>
+                <td colspan="2">Whether you are hauling large items for a DIY project or packing up for a weekend retreat, our pickup trucks have the space, power and durability ideal for your needs. Enterprise Rent-A-Car locations do not allow a hitch to be attached or towing of any kind with the rental vehicle.</td>
+                <td scope="col"><a href="vehicles.html#truck-classes" class="pe-auto">View</a></th>
+              </tr>
+              <tr>
+                <th scope="row">Vans</th>
+                <td colspan="2">Need extra room for people, luggage, or cargo or both? Our minivans and passenger vans can seat up to 7 and 15 passengers respectively and are great for family vacations or accommodating large groups. Cargo vans are ideal for transporting bulky items that may not fit in your personal vehicle.</td>
+                <td scope="col"><a href="vehicles.html#van-classes" class="pe-auto">View</a></th>
+              </tr>
+            </tbody>
+          </table>
   </main>
 
   <footer>
