@@ -30,7 +30,7 @@
   <main>
     <div class="container-fluid">
       <div class="row flex-nowrap">
-        <div class="col-auto flex-wrap">
+        <div class="col-auto flex-wrap" style="padding-right: 2rem;">
           <div class="list-group fixed-left position-sticky" style="top: 0;" id="main-nav">
             <a href="index.html" class="list-group-item list-group-item-action active" aria-current="true"> Dashboard
             </a>
@@ -60,7 +60,7 @@
   
               <div class="col input-group">
                 <span class="input-group-text"> Username </span>
-                <input type="text" class="form-control" placeholder="userBenS" aria-label="username">
+                <input type="text" class="form-control" placeholder="exampleUserName" aria-label="username">
               </div>
             </div>
 
@@ -78,37 +78,43 @@
 
             <h3>Reservation Details</h3>
 
-            <div class="row g-2 mb-2">
-              <div class="col-auto">
-                <label for="inputStartDate" class="col-form-label"> Reservation Start Date </label>
+            <div class="d-flex flex-row g-2 mb-3 justify-content-around">
+              <div class="col input-group" style="padding-right: 2rem;">
+                <span class="input-group-text"> Reservation Start Date </span>
+                <input type="date" class="form-control" placeholder="mm/dd/yyyy" aria-label="reservation start date">
               </div>
-              <div class="col-auto">
-                <input type="date" id="inputStartDate" class="form-control" placeholder="mm/dd/yyyy"
-                  aria-describedby="start date">
+
+              <div class="col input-group">
+                <span class="input-group-text"> Reservation End Date </span>
+                <input type="date" class="form-control" placeholder="mm/dd/yyyy" aria-label="reservation end date">
               </div>
             </div>
 
-            <div class="row g-2 mb-2">
-              <div class="col-auto">
-                <label for="inputPickUpTime" class="col-form-label"> Pick-Up Time </label>
+            <div class="d-flex flex-row g-2 mb-3 justify-content-around">
+              <div class="col input-group" style="padding-right: 2rem;">
+                <span class="input-group-text"> Pick-Up Time </span>
+                <input type="datetime" class="form-control" placeholder="e.g. 12:45 pm" aria-label="pick-up time">
               </div>
-              <div class="col-auto">
-                <input type="datetime" id="inputPickUpTime" class="form-control" placeholder="e.g. 12:45 pm"
-                  aria-describedby="pick-up time">
+
+              <div class="col input-group">
+                <span class="input-group-text"> Drop-Off Time </span>
+                <input type="datetime" class="form-control" placeholder="e.g. 5:00 pm" aria-label="drop-off time">
               </div>
             </div>
 
-            <div class="row g-2 mb-4">
-              <div class="col-auto">
-                <label for="inputPickUpLocation" class="col-form-label"> Pick-Up Location </label>
+            <div class="d-flex flex-row g-2 mb-3 justify-content-around">
+              <div class="col input-group" style="padding-right: 2rem;">
+                <span class="input-group-text"> Pick-Up Location </span>
+                <input type="text" class="form-control" placeholder="e.g. St. Louis, MO" aria-label="pick-up location">
               </div>
-              <div class="col-auto">
-                <input type="datetime" id="inputPickUpLocation" class="form-control" placeholder="e.g. St. Louis, MO"
-                  aria-describedby="pick-up location">
+
+              <div class="col input-group">
+                <span class="input-group-text"> Return Location </span>
+                <input type="text" class="form-control" placeholder="e.g. Salt Lake City, UT" aria-label="drop-off time">
               </div>
             </div>
 
-            <div class="row g-2 mb-2">
+            <!-- <div class="row g-2 mb-2">
               <div class="col-auto">
                 <label for="inputEndDate" class="col-form-label"> Reservation End Date </label>
               </div>
@@ -116,19 +122,9 @@
                 <input type="date" id="inputEndDate" class="form-control" placeholder="mm/dd/yyyy"
                   aria-describedby="end date">
               </div>
-            </div>
+            </div> -->
 
-            <div class="row g-2 mb-2">
-              <div class="col-auto">
-                <label for="inputReturnTime" class="col-form-label"> Return Time </label>
-              </div>
-              <div class="col-auto">
-                <input type="datetime" id="inputReturnTime" class="form-control" placeholder="e.g. 5:00 pm"
-                  aria-describedby="return time">
-              </div>
-            </div>
-
-            <div class="row g-2 mb-4">
+            <!-- <div class="row g-2 mb-4">
               <div class="col-auto">
                 <label for="inputReturnLocation" class="col-form-label"> Return Location </label>
               </div>
@@ -136,36 +132,64 @@
                 <input type="text" id="inputReturnLocation" class="form-control" placeholder="e.g. Salt Lake City, UT"
                   aria-describedby="return location">
               </div>
-            </div>
+            </div> -->
 
             <h3> Car Details </h3>
-            <div class="row">
-              <label for="form-select" class="col-form-label"> # of passengers </label>
-            </div>
+            <div class="d-flex row g-3 mb-3 justify-content-evenly">
+              <div class="col-md-4">
+                <!-- <label for="inputPassengerNumber" class="col-form-label"> # of passengers </label> -->
+                <span class="input-group-text"> # of passengers </span>
+                <select class="form-select" aria-label="select passenger number">
+                  <option selected> </option>
+                  <option value="1-4"> 1 - 4 </option>
+                  <option value="5 - 8"> 5 - 8 </option>
+                  <option value="8+"> 8+ </option>
+                  <!-- <option value="4"> 4 </option>
+                  <option value="5"> 5 </option>
+                  <option value="6"> 6 </option>
+                  <option value="7"> 7 </option>
+                  <option value="8"> 8 </option>
+                  <option value="8+"> 8+ </option> -->
+                </select>
+              </div>
 
-            <div class="col-md-4 mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected> </option>
-                <option value="1"> 1 </option>
-                <option value="2"> 2 </option>
-                <option value="3"> 3 </option>
-                <option value="4"> 4 </option>
-                <option value="5"> 5 </option>
-                <option value="6"> 6 </option>
-                <option value="7"> 7 </option>
-                <option value="8"> 8 </option>
-                <option value="8+"> 8+ </option>
-              </select>
+              <div class="col-md-4">
+                <span class="input-group-text"> Type of vehicle </span>
+                <select class="form-select" aria-label="select car type">
+                  <option selected> </option>
+                  <option value="car"> car </option>
+                  <option value="SUV"> SUV </option>
+                  <option value="trucks"> truck </option>
+                  <option value="vans"> van </option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <span class="input-group-text"> Specific features </span>
+                <select class="form-select" aria-label="select extra features">
+                  <option selected> </option>
+                  <option value="hybrid"> hybrid </option>
+                  <option value="electric"> electric </option>
+                  <option value="automatic drive"> automatic drive</option>
+                  <option value="manual drive"> manual drive </option>
+                  <option value="sports car"> sports car </option>
+                  <option value="luxury car"> luxury car</option>
+                </select>
+              </div>
             </div>
 
             <div class="mb-3">
-              <a href="vehicles.html"  role="button" class="btn btn-outline-secondary"> look up available cars </a>
+              <a href="vehicles.html"  role="button" class="btn btn-outline-secondary"> Look up available cars </a>
             </div>
 
             <div>
               <button type="button" class="btn btn-primary"> Submit </button>
             </div>
           </form>
+        </div>
+
+        <div class="col-sm-1" style="padding: 0">
+
         </div>
       </div>
     </div>
